@@ -22,3 +22,22 @@ def choice():
             self.add_new_features_from_code_fixing
     if choice == "8":
             self.exit(0)
+
+def functions():
+   if function == "1":
+        def self():
+           self.create_other_functionalities
+   if function == "2":
+           self.add_new_functionalities_to_text_editor
+   if function == "3":
+           self.give_new_variables_for_code_defining
+   if function == "4":
+           self.add_new_constants_to_the_text_editor
+   if function == "5":
+           self.implement_new_appearances_to_the_text_editor
+   if function == "6":
+           self.add_new_themes_to_the_text_editor
+   if function == "7":
+           self.give_new_attributes_to_the_text_editor
+   if function == "8":
+           self.exit(0)
