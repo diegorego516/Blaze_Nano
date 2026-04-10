@@ -1,23 +1,51 @@
-import nanoleafapi
+import sys
+
+def criar_funcionalidades():
+    print("\n[+] Configurando novas funcionalidades para o editor...")
+    # Aqui você pode adicionar a lógica para manipular arquivos do HomuraOSDX 7
+
+def adicionar_formatacao():
+    print("\n[+] Aplicando formatação de texto e realce de sintaxe...")
+
+def gerenciar_variaveis():
+    print("\n[+] Implementando lógica de variáveis e símbolos...")
+
+def config_terminal():
+    print("\n[+] Ajustando integrações de terminal e flags de compilação...")
+
+def aplicar_hotfixes():
+    print("\n[+] Verificando vulnerabilidades e aplicando correções de segurança...")
 
 def main_menu():
-    print("1. criar funcionalidades para o editor de texto")
-    print("2. adicionar formatação para textos")
-    print("3. implementar funcionalidades para variáveis em programação no editor de texto")
-    print("4. incrementos de funcionalidades para adicionar novas funcionalidades e funcionar direto do terminal com outras configurações")
-    print("5. adicionar correções quentes para resolver erros de programação e segurança no editor de texto/código")
+    print("\n--- BLAZE NANO EDITOR ENGINE ---")
+    print("1. Criar funcionalidades para o editor de texto")
+    print("2. Adicionar formatação para textos")
+    print("3. Implementar funcionalidades para variáveis")
+    print("4. Configurações de Terminal/Incrementos")
+    print("5. Adicionar correções de segurança (Hotfixes)")
+    print("8. Sair")
+    
+    escolha = input("\nEscolha qual opção que você quer (1-8): ")
 
-    escolha = input("Escolha qual opção que você quer (1-5): ")
-    # em vez de colocar def funções e outras funcionalidades feias e sem sentido
-    criar_editor()
     if escolha == "1":
-        exit(0)
+        criar_funcionalidades()
+    elif escolha == "2":
+        adicionar_formatacao()
+    elif escolha == "3":
+        gerenciar_variaveis()
+    elif escolha == "4":
+        config_terminal()
+    elif escolha == "5":
+        aplicar_hotfixes()
     elif escolha == "8":
-        exit(0)
+        print("Saindo...")
+        sys.exit(0)
+    else:
+        print("Opção inválida!")
 
-    int = input("Escolha a opção de (1-5): ")
-    def criar_editor():
-        print("Criando editor de texto...")
+    # Para manter o menu rodando sem dar erro de recursão, 
+    # usamos um loop no bloco principal, não chamando a função dentro dela mesma.
 
 if __name__ == "__main__":
-    main_menu()
+    while True:
+        main_menu()
