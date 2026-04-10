@@ -1,43 +1,23 @@
 import nanoleafapi
 
-def nanoleafapi():
-    if nanoleafapi in nanoleafapi:
-        def blaze_nano():
-            nanoleafapi = blaze_nano
-def choice():
-    if choice == "1":
-        def self():
-            self.create_text_editor_options
-    if choice == "2":
-            self.add_code_editing_for_syntax
-    if choice == "3":
-            self.add_additional_code_highlighting_for_error_debugging
-    if choice == "4":
-            self.add_important_text_numbers_as_secrets
-    if choice == "5":
-            self.add_hotfixes_to_codes
-    if choice == "6":
-            self.add_important_changes
-    if choice == "7":
-            self.add_new_features_from_code_fixing
-    if choice == "8":
-            self.exit(0)
+def main_menu():
+    print("1. criar funcionalidades para o editor de texto")
+    print("2. adicionar formatação para textos")
+    print("3. implementar funcionalidades para variáveis em programação no editor de texto")
+    print("4. incrementos de funcionalidades para adicionar novas funcionalidades e funcionar direto do terminal com outras configurações")
+    print("5. adicionar correções quentes para resolver erros de programação e segurança no editor de texto/código")
 
-def functions():
-   if function == "1":
-        def self():
-           self.create_other_functionalities
-   if function == "2":
-           self.add_new_functionalities_to_text_editor
-   if function == "3":
-           self.give_new_variables_for_code_defining
-   if function == "4":
-           self.add_new_constants_to_the_text_editor
-   if function == "5":
-           self.implement_new_appearances_to_the_text_editor
-   if function == "6":
-           self.add_new_themes_to_the_text_editor
-   if function == "7":
-           self.give_new_attributes_to_the_text_editor
-   if function == "8":
-           self.exit(0)
+    escolha = input("Escolha qual opção que você quer (1-5): ")
+    # em vez de colocar def funções e outras funcionalidades feias e sem sentido
+    criar_editor()
+    if escolha == "1":
+        exit(0)
+    elif escolha == "8":
+        exit(0)
+
+    int = input("Escolha a opção de (1-5): ")
+    def criar_editor():
+        print("Criando editor de texto...")
+
+if __name__ == "__main__":
+    main_menu()
